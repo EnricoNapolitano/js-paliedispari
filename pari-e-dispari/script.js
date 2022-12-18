@@ -9,4 +9,7 @@ Dichiariamo chi ha vinto.
 //* DOMS elements
 const userNumberTypeElement = document.getElementById('user-number-type');
 const userNumberElement = document.getElementById('user-number');
-console.log(userNumberElement, userNumberTypeElement);
+const buttonElement = document.querySelector('button');
+
+const randomNumber = Math.floor(Math.random()*5)+1;
+console.log(randomNumber)
