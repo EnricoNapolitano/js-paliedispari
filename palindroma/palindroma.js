@@ -13,4 +13,7 @@ const targetElement = document.getElementById('target');
 formElement.addEventListener('submit', function(e){
     e.preventDefault(); // nedeed not to send form's value to backend
 
+    const inputValue = inputElement.value.trim();
+    console.log(inputValue);
+
 })
