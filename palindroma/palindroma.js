@@ -28,6 +28,6 @@ formElement.addEventListener('submit', function(e){
 
     //! validation: TO DO
 
-
-
+    const message = isPalindrome(inputValue) ? 'la parola è palindroma' : 'la parola non è palindroma';
+    targetElement.innerText = message;
 })
