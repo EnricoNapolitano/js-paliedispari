@@ -26,8 +26,17 @@ formElement.addEventListener('submit', function(e){
 
     const inputValue = inputElement.value.trim();
 
-    //! validation: TO DO
+    //* Validation
+    let message = '';
+    let validWord = true;
+    if (!isNaN(inputValue)) {
+        message = 'attenzione, devi inserire una parola!';
+        validWord = false;
+    }
 
-    const message = isPalindrome(inputValue) ? 'la parola è palindroma' : 'la parola non è palindroma';
-    targetElement.innerText = message;
+    if (validWord) {
+        message = isPalindrome(inputValue) ? 'la parola è palindroma' : 'la parola non è palindroma'; // ternary condition using a function
+    }
+    
+    targetElement.innerText = message; // printing final message
 })
