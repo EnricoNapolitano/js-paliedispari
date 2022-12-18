@@ -33,7 +33,7 @@ formElement.addEventListener('submit', function(e){
     sum(randomNumber, userNumber) // sum function
     typeOfNumber(randomNumber, userNumber) // function that release if sum is an even or an odd number
 
-    targetElement.innerText = `la giocata del Computer è ${randomNumber}. Pertanto la somma è ${oddOrEven}`;
+    targetElement.innerText = `la giocata del Computer è <b>${randomNumber}</b>. Pertanto la somma è ${oddOrEven}`;
     const result = ((oddOrEven === 'pari') && userNumberType === 'even') ? 'VINTO' : 'PERSO'; // ternary condition to show who won the match
     resultElement.innerHTML = `HAI <b>${result}!</b>`
 })
